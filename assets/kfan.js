@@ -42,7 +42,9 @@
       card.appendChild(el("div", "noimg", "&#9678;"));
     }
     var meta = el("div");
-    meta.appendChild(el("div", "t", esc(t.en)));
+    var title = el("div", "t", esc(t.en));
+    if (item.kr) title.appendChild(el("span", "krchip", "KR"));  // Korean-language listing (KTO Korean DB)
+    meta.appendChild(title);
     var bits = [];
     if (showDist && item.dist != null) bits.push(item.dist + " m &middot; ~" + walkMin(item.dist) + " min walk");
     if (item.start && item.end) bits.push(fmtDate(item.start) + " &ndash; " + fmtDate(item.end));

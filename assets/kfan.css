@@ -67,6 +67,9 @@ p.secsub{color:var(--muted); font-size:14px; margin:0 0 18px}
   display:flex; align-items:center; justify-content:center; color:var(--muted); font-size:20px}
 .poi .t{font-size:13.5px; font-weight:600; line-height:1.35}
 .poi .d{color:var(--muted); font-size:12px; margin-top:3px; font-family:"IBM Plex Mono",monospace}
+.krchip{display:inline-block; margin-left:6px; vertical-align:1px; font-family:"IBM Plex Mono",monospace;
+  font-size:9.5px; font-weight:600; color:var(--jade); border:1px solid rgba(85,162,124,.45);
+  border-radius:5px; padding:0 4px; letter-spacing:.05em}
 .attribution{color:var(--muted); font-size:12px; margin-top:14px; line-height:1.6}
 
 /* buttons */

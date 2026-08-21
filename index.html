@@ -3,14 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>K-FAN PLANNER — the concert expedition guide for K-pop fans flying into Korea</title>
-<meta name="description" content="Venue guides for Gocheok Sky Dome, KSPO Dome, Inspire Arena, Jamsil and Seoul Arena: bag policy, lightstick rules, last trains, and stays near the venue.">
-<meta property="og:title" content="K-FAN PLANNER — the concert expedition guide for K-pop fans flying into Korea">
-<meta property="og:description" content="Venue guides for Gocheok Sky Dome, KSPO Dome, Inspire Arena, Jamsil and Seoul Arena: bag policy, lightstick rules, last trains, and stays near the venue.">
-<meta property="og:type" content="website">
+<title>K-Concert Trip — the concert trip guide for K-pop fans flying into Korea</title>
+<meta name="description" content="Venue guides for Gocheok Sky Dome, KSPO Dome, Inspire Arena, Jamsil and Seoul Arena: bag policy, lightstick rules, merch queues, last trains, and where to stay.">
 <link rel="canonical" href="https://cksals00-ai.github.io/kfan-web/">
+<meta property="og:title" content="K-Concert Trip — the concert trip guide for K-pop fans flying into Korea">
+<meta property="og:description" content="Venue guides for Gocheok Sky Dome, KSPO Dome, Inspire Arena, Jamsil and Seoul Arena: bag policy, lightstick rules, merch queues, last trains, and where to stay.">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://cksals00-ai.github.io/kfan-web/">
-<meta name="theme-color" content="#0B1210">
+<meta property="og:image" content="https://cksals00-ai.github.io/kfan-web/assets/icons/kfan_icon_512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#FFF8F6">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/kfan_icon_32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/kfan_icon_192.png">
+<link rel="apple-touch-icon" href="assets/icons/kfan_icon_180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,20 +23,20 @@
 
 </head>
 <body data-src="data/kfan_data.json">
-<header class="site"><div class="wrap">
-  <a class="logo" href="index.html">K-FAN <b>PLANNER</b></a>
+<header class="site"><div class="saekdong" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="wrap bar">
+  <a class="logo" href="index.html"><img src="assets/icons/kfan_icon_192.png" alt="K-Concert Trip" width="28" height="28"><span class="wm">K-Concert <b>Trip</b></span></a>
   <nav class="main">
     <a href="index.html#venues" >Venues</a>
     <a href="checklist.html" >Checklist</a>
-    <a href="index.html#app" >App</a>
+    <a href="index.html#app">App</a>
   </nav>
 </div></header>
 <div class="hero wrap">
-  <span class="badge-soon"><span class="dot"></span>App launching soon</span>
+  <span class="badge-soon"><span class="dot"></span>App coming soon</span>
   <h1>You got the ticket.<br>We handle <em>everything else</em>.</h1>
-  <p class="lede">Flying into Korea for a show? K-FAN PLANNER is the expedition guide for overseas fans:
-  what each venue is really like &mdash; bags, lightstick rules, merch queues, last trains &mdash;
-  plus places to stay within walking distance. No idol content, no ticket sales. Just the ground game.</p>
+  <p class="lede">Flying into Korea for a show? K-Concert Trip is the ground guide for overseas fans &mdash;
+  what each venue is actually like: bags and lockers, lightstick rules, merch queues, the last train home,
+  and where to sleep within walking distance. No idol content. No ticket sales. Just the part nobody tells you.</p>
   <div class="share"><span>Share</span>
   <a data-share="x" href="#">Post on X</a>
   <a data-share="fb" href="#">Facebook</a>
@@ -40,17 +45,34 @@
 </div>
 <section id="venues"><div class="wrap">
   <h2 class="sec">Venue guides</h2>
-  <p class="secsub">Five venues that host nearly every major show in the capital region.</p>
-  <div class="grid v3"><a class="card" href="venues/gocheok.html"><h3>Gocheok Sky Dome</h3>
-        <div class="sub">Guro-gu, Seoul</div><div class="cap">Guide + nearby stays</div></a>
-<a class="card" href="venues/kspo.html"><h3>KSPO Dome</h3>
-        <div class="sub">Olympic Park, Songpa-gu, Seoul</div><div class="cap">Guide + nearby stays</div></a>
-<a class="card" href="venues/inspire.html"><h3>Inspire Arena</h3>
-        <div class="sub">Yeongjong Island, Incheon</div><div class="cap">Guide + nearby stays</div></a>
-<a class="card" href="venues/jamsil.html"><h3>Jamsil Indoor Arena</h3>
-        <div class="sub">Jamsil Sports Complex, Songpa-gu, Seoul</div><div class="cap">Guide + nearby stays</div></a>
-<a class="card" href="venues/seoul-arena.html"><h3>Seoul Arena</h3>
-        <div class="sub">Changdong, Dobong-gu, Seoul</div><div class="cap">Opening 2027</div></a></div>
+  <p class="secsub">Five venues that host nearly every major show in the capital region &mdash; 35 sections written from the ground.</p>
+  <div class="grid v3"><a class="card vcard" href="venues/gocheok.html">
+      <h3>Gocheok Sky Dome</h3>
+      <div class="sub">Korea&#x27;s only domed stadium — rain never cancels, but the air gets thick.</div>
+      <div class="cap mono">Guro-gu, Seoul &middot; 18,076 seats</div></a><a class="card vcard" href="venues/kspo.html">
+      <h3>KSPO Dome</h3>
+      <div class="sub">The classic K-pop room — inside Olympic Park, still called &#x27;Cheju&#x27; by locals.</div>
+      <div class="cap mono">Songpa-gu, Seoul &middot; 14,730 seats</div></a><a class="card vcard" href="venues/inspire.html">
+      <h3>Inspire Arena</h3>
+      <div class="sub">Korea&#x27;s first purpose-built arena — and it&#x27;s attached to your hotel, next to the airport.</div>
+      <div class="cap mono">Yeongjong-do, Incheon &middot; 15,000 seats</div></a><a class="card vcard" href="venues/jamsil.html">
+      <h3>Jamsil Indoor Arena</h3>
+      <div class="sub">The intimate one — smallest of the five, and everything else is right outside.</div>
+      <div class="cap mono">Songpa-gu, Seoul &middot; 11,069 seats</div></a><a class="card vcard" href="venues/seoul-arena.html">
+      <h3>Seoul Arena</h3>
+      <div class="sub">Korea&#x27;s first arena built purely for music — opening in Changdong, north Seoul.</div>
+      <div class="cap mono">Changdong, Dobong-gu, Seoul &middot; Opening 2027</div></a></div>
+</div></section>
+<section><div class="wrap">
+  <h2 class="sec">Plan the trip, not just the ticket</h2>
+  <p class="secsub">A staged checklist from D-60 to the ride home.</p>
+  <div class="grid v3">
+    <div class="card"><h3>D-60 &middot; Tickets</h3><div class="sub">Accounts and verification take longer than fans expect.</div></div>
+    <div class="card"><h3>D-30 &middot; Flights &amp; stay</h3><div class="sub">Book around the venue, not just the city.</div></div>
+    <div class="card"><h3>D-7 &middot; Entry &amp; money</h3><div class="sub">Arrival paperwork, cards, and cash that actually work.</div></div>
+    <div class="card"><h3>Show day</h3><div class="sub">Queue timing, bags, and getting out afterwards.</div></div>
+  </div>
+  <div class="btnrow"><a class="btn jade" href="checklist.html">Open the checklist</a></div>
 </div></section>
 <section data-needs-data><div class="wrap">
   <h2 class="sec">While you're here</h2>
@@ -60,12 +82,15 @@
 </div></section>
 <div class="wrap"><div class="datanote" id="dataNote"></div></div>
 <section id="app"><div class="wrap"><div class="appcta">
-  <h2>The full guide lives in the app</h2>
-  <p>Venue guides, a D-day expedition checklist that works offline, and stay &amp; transport shortcuts &mdash; built for fans flying in for a show.</p>
-  <span class="badge-soon"><span class="dot"></span>App launching soon &middot; App Store</span>
+  <img src="assets/icons/kfan_icon_192.png" alt="" width="64" height="64" class="appicon">
+  <div>
+    <h2>Everything here, in your pocket</h2>
+    <p>The full guide plus an offline D-day checklist &mdash; built for fans flying in for a show.</p>
+    <span class="badge-soon"><span class="dot"></span>Coming soon to the App Store</span>
+  </div>
 </div></div></section>
 <footer class="site"><div class="wrap">
-  <div>K-FAN PLANNER (working title) &middot; An A.P Holdings product &middot; Independent fan-travel guide.
+  <div>K-Concert Trip &middot; An A.P Holdings product &middot; Independent fan-travel guide.
   Not affiliated with any artist, agency, venue or ticket seller. We do not sell or resell tickets.</div>
   <div style="margin-top:6px">Nearby-places data by <a href="https://knto.or.kr" rel="noopener" target="_blank">Korea Tourism Organization</a> (TourAPI) &middot; <span data-disclaimer></span></div>
   <div style="margin-top:6px"><a href="privacy.html">Privacy</a> &middot; <span id="dataStamp" class="mono"></span></div>
